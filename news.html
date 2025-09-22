@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Tin tức CLB Tình Nguyện & Tuyên Truyền.</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/news.css">
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header>
+    <div class="logo-section">
+      <img src="img/Logo1.png" alt="Logo CLB">
+      <h1>CLB Tình Nguyện & Tuyên Truyền</h1>
+    </div>
+    <div class="slogan">Nhiệt Huyết Tuổi Trẻ - Chia Sẻ Yêu Thương!</div>
+    <div class="social-icons">
+      <a class="facebook" href="https://www.facebook.com/tinhnguyentuyentruyen.ictu" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a class="tiktok" href="https://www.tiktok.com/@vpc.ictu" target="_blank"><i class="fab fa-tiktok"></i></a>
+      <a class="youtube" href="https://www.youtube.com/@vpcictu" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+  </header>
+
+  <!-- ===== Navigation ===== -->
+  <nav>
+    <a href="index.html">Trang chủ</a>
+    <a href="events.html">Chương Trình Lớn</a>
+    <a href="dailyevents.html">Hoạt động thường niên</a>
+    <a href="news.html">Tin tức</a>
+    <a href="members.html">Ban Chủ Nhiệm</a>
+  </nav>
+
+  <!-- ===== Main ===== -->
+  <main>
+    <h1 class="bestnews">Tin tức mới nhất</h1>
+    <div class="news-container">
+      <!--Tin tức số 1-->
+      <div class="news-item">
+       <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftinhnguyentuyentruyen.ictu%2Fposts%2Fpfbid0t5dbzGQhhBAU1WM4nxapeMsNfSTduu8nt23xfz1Qpkw9i7cmgmJq77pcJMUxwxuAl&show_text=true&width=500" 
+          width="500" height="544" 
+          style="border:none;overflow:hidden" 
+          scrolling="no" frameborder="0" 
+          allowfullscreen="true" 
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </div>
+      <!--Tin tức số 2-->
+      <div class="news-item">
+        <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Ftinhnguyentuyentruyen.ictu%2Fvideos%2F962285492742315%2F&show_text=true&width=560&t=0" 
+          width="560" height="600" 
+          style="border:none;overflow:hidden" 
+          scrolling="no" frameborder="0" 
+          allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
+          allowFullScreen="true">
+        </iframe>
+      </div>
+      <!--Tin tức số 3-->
+      <div class="news-item">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftinhnguyentuyentruyen.ictu%2Fposts%2Fpfbid0Ue5J225GaXzEfhM8iNq3eAwiR83YsHvSG8Gk5nRGo8qzHywPTvk3DvurJ7VgNbS2l&show_text=true&width=500" 
+            width="500" height="767" 
+            style="border:none;overflow:hidden" 
+            scrolling="no" frameborder="0" 
+            allowfullscreen="true" 
+            allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+        </iframe>
+      </div>
+      <!--Tin tức số 4-->
+      <div class="news-item">
+        <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Ftinhnguyentuyentruyen.ictu%2Fposts%2Fpfbid04G8ar5XAymkZqBEguyaYrw2UT2DQE7aG7tV5rWUq6GFWuzvYZLJsShHNpAnsy2cnl&show_text=true&width=500" 
+        width="800" height="761" 
+        style="border:none;overflow:hidden" 
+        scrolling="no" frameborder="0" 
+        allowfullscreen="true" 
+        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2025 CLB Tình Nguyện & Tuyên Truyền Trường Đại Học CNTT & TT |<br> Liên hệ: vpc.ictu@gmail.com</p>
+  </footer>
+
+  <script>
+    // Auto resize iframe Facebook
+    window.addEventListener("message", function(event) {
+      if (event.origin.includes("facebook.com") && event.data && event.data.type === "resize") {
+        const iframe = Array.from(document.querySelectorAll("iframe"))
+          .find(f => f.contentWindow === event.source);
+        if (iframe) {
+          iframe.style.height = event.data.height + "px";
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>

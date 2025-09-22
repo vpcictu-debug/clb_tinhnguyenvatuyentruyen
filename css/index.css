@@ -1,0 +1,213 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #80e88e;
+      color: #333;
+    }
+
+    /* ===== Header ===== */
+    header {
+      background: #0cb3f5;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+    }
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .logo-section img {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .logo-section h1 {
+      font-size: 24px;
+      color: #fff;
+      font-weight: 900;
+      text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,  
+        -1px  1px 0 #000,  
+        1px  1px 0 #000;
+    }
+    .slogan {
+        flex: 1;
+        text-align: center;
+        font-size: 38px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        opacity: 0.95;
+        font-style: italic;
+        color: #ffffff;
+        text-shadow: 
+        1px 1px 0 #000,
+        2px 2px 0 #000,
+        3px 3px 0 #000,
+        4px 4px 0 #000,
+        5px 5px 0 #000;
+    }
+    .social-icons {
+      display: flex;
+      gap: 15px;
+      font-size: 32px;
+    }
+    .social-icons a.facebook {
+      color: #063497;
+      transition: transform 0.3s, color 0.3s;
+    }
+     .social-icons a.tiktok {
+      color: rgb(0, 0, 0);
+      transition: transform 0.3s, color 0.3s;
+    }
+     .social-icons a.youtube {
+      color: rgb(235, 11, 11);
+      transition: transform 0.3s, color 0.3s;
+    }
+    .social-icons a.facebook:hover {
+      transform: scale(1.2);
+      color: #063497;
+    }
+    .social-icons a.tiktok:hover {
+      transform: scale(1.2);
+      color: #000000;
+    }
+    .social-icons a.youtube:hover {
+      transform: scale(1.2);
+      color: #ff0000;
+    }
+    .social-icons a:hover {
+      transform: scale(1.2);
+      color: #024c65;
+    }
+
+    /* ===== Navigation ===== */
+    nav {
+      background: #028ac7;
+      display: flex;
+      padding-left: 30px;
+      justify-content: left;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: rgb(255, 255, 255);
+      padding: 12px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      text-shadow: #000000 1px 1px 2px;
+    }
+    nav a:hover {
+      background: #026c99;
+      border-radius: 6px;
+      transform: scale(1.05);
+    }
+    /* ===== Giới thiệu + Video ===== */
+    .intro-video {
+      max-width: 1370px;
+      margin: 30px auto;
+      border-radius: 10px;
+      display: flex;
+      gap: 20px;
+    }
+    .intro-text {
+        flex: 3;
+        max-width: 800px;
+        margin: 40px auto; /* căn giữa */
+        padding: 30px;
+        background: #f9fafb; /* nền sáng dịu */
+        border-left: 6px solid #044d4e; /* nhấn mạnh bằng viền */
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* đổ bóng nhẹ */
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.8;
+        color: #333;
+        text-indent: 2em; /* thụt đầu dòng đoạn văn */
+    }
+    li{
+        list-style: none;
+       
+    }
+    h3{
+        text-align: left;
+
+    }
+
+    .intro-text h2 {
+        font-size: 28px;
+        color: #2c7a7b;
+        margin-bottom: 15px;
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .intro-text p {
+        font-size: 16px;
+        text-align: justify;
+     }
+
+    .intro-video-box {
+        flex: 7;
+        display: flex;
+        border-radius: 12px;
+        justify-content: center; /* căn ngang */
+        align-items: center;     /* căn dọc */
+        height: 100%;            /* hoặc đặt chiều cao cụ thể nếu cần */
+        background: #f9fafb;     /* nền sáng (tùy chọn) */
+        padding: 20px;
+    }
+
+    .intro-video-box video {
+        max-width: 100%;  /* để video không vượt quá khung */
+        max-height: 550px;
+        border-radius: 12px; /* bo góc nhẹ cho đẹp */
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2); /* đổ bóng */
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #0cb3f5;
+      color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 15px;
+      margin-top: auto;
+      font-size: 18px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+      }
+      .slogan {
+        order: 3;
+        font-size: 14px;
+      }
+      .logo-section {
+        order: 1;
+        justify-content: center;
+      }
+      .social-icons {
+        order: 2;
+        justify-content: center;
+      }
+      .slider img { height: 250px; }
+      .intro-video { flex-direction: column; }
+    }
