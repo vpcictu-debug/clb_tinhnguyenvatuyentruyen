@@ -211,3 +211,20 @@
       .slider img { height: 250px; }
       .intro-video { flex-direction: column; }
     }
+    .game{
+      list-style: none;
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: 'Times New Roman', Times, serif;
+    }
+    .game:hover{
+      transform: scale(1.2);
+      color: rgb(50, 238, 25);
+    }
+    .game a{
+      text-decoration: none;
+      color: rgb(248, 44, 8);
+    }
